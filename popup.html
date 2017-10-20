@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>My paasword</title>
+  <style>
+    body {
+      text-align: center;
+    }
+
+    #input {
+      padding: 5px 10px;
+      border-radius: 20px;
+      border: 1px solid #dcdcdc;
+      line-height: 1;
+      font-size: 14px;
+    }
+
+    #input:focus {
+      outline: none;
+      border-color: #5cd0ec;
+    }
+
+  </style>
+
+</head>
+
+<body>
+  <input id="input" type="text" placeholder="页面标识" />
+  <p id="output" type="text"></p>
+  <script>
+    (function () {
+      var $input = document.querySelector('#input')
+      var $output = document.querySelector('#output')
+
+      $input.addEventListener('keydown', function (e) {
+        if (e.code === 'Enter' || e.keyCode === 13) {
+          var val = $input.value.trim()
+          if (!val) return;
+          // TODO
+        }
+      }, false)
+    })()
+  </script>
+</body>
+
+</html>
