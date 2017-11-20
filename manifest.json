@@ -1,7 +1,7 @@
 {
-  "name": "My paasword",
+  "name": "My password",
   "version": "0.0.1",
-  "description": "计算密码",
+  "description": "Calculate my password",
   "manifest_version": 2,
   "offline_enabled": true,
   "icons": {
