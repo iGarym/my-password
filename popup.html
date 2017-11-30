@@ -11,6 +11,7 @@
 
     #input {
       padding: 5px 10px;
+      margin-bottom: 10px;
       border-radius: 20px;
       border: 1px solid #dcdcdc;
       line-height: 1;
@@ -24,6 +25,16 @@
 
     #output {
       font-size: 18px;
+      color: #fff;
+    }
+
+    #btn {
+      padding: 0;
+      border: none;
+      outline: none;
+      font-size: 12px;
+      background: #fff;
+      color: #fff;
     }
   </style>
 
@@ -32,6 +43,8 @@
 <body>
   <input id="input" type="text" placeholder="页面标识" autofocus/>
   <p id="output"></p>
+  <button id="btn" data-clipboard-action="copy" data-clipboard-target="#output">Do</button>
+  <script src="js/clipboard.min.js"></script>
   <script src="js/md5.min.js"></script>
   <script src="js/popup.js"></script>
 </body>
